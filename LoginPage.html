@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DREAMTEAMLOGIN</title>
+        <style>
+            body {
+            background-image: url('https://cdn.pixabay.com/photo/2021/04/15/11/53/office-desk-6180925_1280.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: sans-serif;
+            }
+            .login-page {
+                width: 200px;
+                margin: 0 auto;
+            }
+            .login-form input, .register-form input {
+                display: block;
+                margin: 2px;
+                padding: 4px;
+                width: 90%;
+            }
+            .login-form button, .register-form button {
+                margin: 4px auto;
+                border: none;
+                background-color: rgb(11, 157, 255);
+                color: white;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 16px;
+            }
+            .register-form {
+                display: none;
+            }
+        </style>
+        <script>
+            function showRegister() {
+                document.querySelector(".login-form").style.display = 'none';
+                document.querySelector(".register-form").style.display = 'block';
+            }
+            function showLogin(){
+                document.querySelector(".register-form").style.display = 'none';
+                document.querySelector(".login-form").style.display = 'block';
+            }
+        </script>
+    </head>
+
+    <body style="text-align: center;">
+        <h1 style="color:black;">Welcome</h1>
+        <h3 style="color:black;"> Login</h3>
+        <div class="login-page">
+            <form class="login-form">
+                <input name="username" type="text" placeholder="Username">   
+                <input name="password" type="password" placeholder="Password">
+                <button type="submit">Login</button>
+                <button type="button" onclick="showRegister()">Register</button>
+            </form>
+            <form class="register-form">
+                <input name="username" type="text" placeholder="Username">   
+                <input name="password" type="password" placeholder="Password">
+                <input name="firstname" type="text" placeholder="First name">
+                <input name="username" type="text" placeholder="Last name">
+                <input name="email" type="email" placeholder="email">
+                <input name="telnumber" type="tel" placeholder="Phonenumber">
+                <button type="submit">Register</button>
+                <button type="button" onclick="showLogin()">Back to Login</button>   
+            </form>
+        </div>
+</html>
