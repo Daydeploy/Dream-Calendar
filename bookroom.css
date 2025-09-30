@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background-color: rgb(189, 187, 187);
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.rapper-row {
+  min-height: 100px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.Kendrick,
+.Nas,
+.Biggie,
+.Cole {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 250px;
+  height: 50px;
+}
+
+
+table,
+td {
+  text-align: center;
+  border: 1px solid black;
+
+  border-collapse: collapse;
+  margin-left: 105px;
+  margin-top: 10px;
+
+}
+
+.main-table th {
+  text-align: left;
+
+  border-right: 1px solid #000;
+  font-size: 0.9rem;
+}
+
+
+.side-bar,
+td {
+
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 0px;
+  height: 200px;
+}
+
+.main-layout {
+  display: flex;
+  align-items: flex-start;
+  /* aligns tops */
+}
+
+.booked-rooms {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 250px;
+  height: 50px;
+  margin-right: 125px;
+}
+
+/*nav bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(189, 187, 187);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(114, 110, 110);
+  color: white;
+}

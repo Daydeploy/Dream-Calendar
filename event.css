@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Top bar */
+.top-bar {
+  background-color: rgb(189, 187, 187);
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+/* Center the card on the page */
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* Event card */
+.card {
+  width: 260px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+  /* to clip the rounded corners of the header */
+  text-align: center;
+  background: #fff;
+}
+
+.card-header {
+  background-color: #e57373;
+  /* light red */
+  padding: 10px;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body p {
+  margin: 8px 0;
+}
+
+/* Attend button */
+.attend-btn {
+  background-color: #4c4cff;
+  /* bright blue */
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  margin-top: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.attend-btn:hover {
+  opacity: 0.85;
+}
+/*nav bar */
+.topnav {
+  overflow: hidden;
+  background-color:rgb(189, 187, 187) ;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(114, 110, 110);
+  color: white;
+}

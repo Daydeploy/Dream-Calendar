@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Page</title>
+    <link rel="stylesheet" href="css/event.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href=>Home</a>
+        <a class="active" href="event.html">Events</a>
+        <a href="">Profile</a>
+        <a href="bookroom.html">Book room</a>
+    </div>
+
+    <!-- Top bar -->
+    <div class="top-bar">
+        <div class="date"></div>
+
+        <div class="time"></div>
+    </div>
+
+    <!-- Event card -->
+    <main>
+        <div class="card">
+            <div class="card-header">pub quiz</div>
+            <div class="card-body">
+                <p>guess the song pub quiz</p>
+                <p><strong>location:</strong> cafeteria</p>
+                <p><strong>date:</strong> 01/05/2025</p>
+                <p><strong>time:</strong> 18:00</p>
+                <button class="attend-btn">attend</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script>
+    const timeElement = document.querySelector(".time")
+    const dateElement = document.querySelector(".date")
+
+    /**
+     * 
+     * @param {Date} date 
+     * @returns 
+     */
+    function formatTime(date) {
+        const hours12 = date.getHours() % 24 || 24;
+        const minutes = String(date.getMinutes()).padStart(2, '0');
+
+        return `${hours12} : ${(minutes)}`;
+    }
+    function formatDate(date) {
+        const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const MONTHS = ["January", "Februari", "March", "April", "May", "June", "Juli", "Augustus", "September", "October", "December"];
+        return `${DAYS[date.getDay()]}, ${MONTHS[date.getMonth()]} ${date.getDate()} ${date.getFullYear()}`;
+    }
+    setInterval(() => {
+        const now = new Date()
+        if (timeElement && dateElement) {
+            timeElement.textContent = formatTime(now);
+            dateElement.textContent = formatDate(now);
+        }
+
+    }, 200)
+</script>
+
+</html>
