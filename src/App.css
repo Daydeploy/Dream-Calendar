@@ -1,3 +1,9 @@
+/* When the navbar is fixed to the top we need to offset page content so it's not hidden
+   Adjust this value if the navbar height changes (image size / padding) */
+body {
+  padding-top: 80px;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
