@@ -4,7 +4,7 @@ export default function MainLayout() {
   return (
     <div>
       <header>
-        <nav>
+        <nav style={{ display: 'flex', gap: '1rem' }}>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
         </nav>
