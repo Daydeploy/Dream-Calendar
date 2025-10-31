@@ -1,8 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 
-import NavBar from "/Users/rowin04/Desktop/GitHub/Dream-Calendar/src/components/Navbar"
+import NavBar from "../components/Navbar";
 import "bootstrap/dist/css/bootstrap.css"
-import imagePath from "/Users/rowin04/Desktop/GitHub/Dream-Calendar/src/assets/pictures/doge.jpeg"
+import imagePath from "../assets/pictures/doge.jpeg"
 export default function MainLayout() {
   return (
     <div>
