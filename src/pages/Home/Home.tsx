@@ -8,7 +8,7 @@ function Home() {
   const handleToggle = () => setShowRegister(!showRegister);
 
    return (
-    <div>
+    <div >
       <h1 style={{ color: "black" }}>Welcome</h1>
       <h3 style={{ color: "black" }}>{showRegister ? "Register" : "Login"}</h3>
 
